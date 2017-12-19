@@ -2,19 +2,33 @@ body {
   width: 100%;
   height: 100%;
   background-image: url(woodPanel.png);
+  font-family: 'Lato', sans-serif;
 }
 
 a {
   color: white;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .navigationContents {
+  font-weight: 100;
   color: white;
+  font-size: 17px;
+  height: 40px;
   list-style-type: none;
   display: block;
   overflow: hidden;
-  background-color: rgba(45, 43, 43, 0.8);
+  background-color: rgb(51, 51, 51);
+  padding: 3px 0px 3px 0px;
+}
+
+#aboutMe, #contactMe, #myWork, #skillSet {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#aboutMe:hover, #contactMe:hover, #myWork:hover, #skillSet:hover {
+  border-bottom: 1px solid beige;
 }
 
 .navigationContents li {
@@ -25,4 +39,16 @@ a {
 
 .navigationContents li:first-child {
   float:left;
+}
+
+.title {
+  font-size: 400%;
+  padding-top: 140px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.subTitle {
+  font-size: 150%;
+  text-align: center;
 }
