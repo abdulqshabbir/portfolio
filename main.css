@@ -52,3 +52,40 @@ a {
   font-size: 150%;
   text-align: center;
 }
+
+.arrow {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform:scale(2);
+  }
+}
+
+.fa {
+  animation-name: moveDown;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes moveDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
